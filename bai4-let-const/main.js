@@ -18,3 +18,21 @@ console.log(course);
 
 // hosting : đưa lên đầu
 // var được hỗ trợ hosting, còn let và const thì không 
+
+// const k thể sử dụng toán tử gán lại lần thứ 2 
+//vd 
+const a = 1;
+a = 100;
+// console.log(a);// lỗi 
+const b = {
+    name:'pqh tobi'
+};
+b.name = 'pqh'; // được vì ở đây là phép gán cho name chứ k phải cho a nên const k lỗi 
+// code thuần : thì dùng var 
+//có sử dụng thư viện babel: const, let
+// khi định nghĩa biến và không gán lại biến đó thì dùng const 
+//khi cần gán lại giá trị cho biến : let
+let isSuccess  = false;
+if(true){
+    isSuccess = true; // khi dùng 1 biến và phải gán lại thì dùng let
+}
